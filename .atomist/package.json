@@ -1,0 +1,25 @@
+{
+  "name": "@mshell-rugs/nodejs-library",
+  "version": "0.1.0",
+  "description": "Rug archive enabling development of Node.js libraries",
+  "keywords": [
+    "Atomist",
+    "Rug",
+    "MShell"
+  ],
+  "author": "MShell",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "http://git.prod.skyscanner.local/mshell-rugs/nodejs-library"
+  },
+  "homepage": "http://git.prod.skyscanner.local/mshell-rugs/nodejs-library",
+  "dependencies": {
+    "@atomist/rug": "0.10.0"
+  },
+  "scripts": {
+    "rug-install": "rug install -urX",
+    "rug-test": "rug test -urX",
+    "rug-publish": "rug publish -urX"
+  }
+}
