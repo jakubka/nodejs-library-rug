@@ -3,21 +3,21 @@
 @tag "documentation"
 editor AddReadme
 
-@displayName "Project Name"
-@description "Name of the new project"
-@validInput "A valid GitHub project name, which has only alphanumeric, -, ., and _ characters, less than 22 characters"
-@minLength 1
-@maxLength 21
-param project_name: @project_name
+@displayName "Library Name"
+@description "Name of the library as it's gonna appear on NPM"
+@validInput "Lowercase characters and dashes"
+@minLength 3
+@maxLength 100
+param library_name: @any
 
 @displayName "Project Description"
-@description "One-sentence description of the new project"
-@validInput "A string 1-90 characters long"
-@minLength 1
-@maxLength 90
+@description "Short description of the purpose of the library"
+@validInput "Lowercase characters and dashes"
+@minLength 3
+@maxLength 1000
 param description: @any
 
-let readme = "readme.vm"
+let readme = "readme.mustache"
 let readmeFilename = "README.md"
 
 with Project
