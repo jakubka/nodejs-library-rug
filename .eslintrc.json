@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "import"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "strict": "off",
+    "comma-dangle": "off",
+    "no-param-reassign": "off",
+    "max-len": [
+      "warn",
+      120
+    ]
+  }
+}

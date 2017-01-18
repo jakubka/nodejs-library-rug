@@ -94,4 +94,4 @@ class NewNodeJsLibraryGenerator extends CustomizingProjectGenerator {
 //     }
 // }
 
-let generator: ProjectGenerator = new NewNodeJsLibraryGenerator();
+export let generator: ProjectGenerator = new NewNodeJsLibraryGenerator();

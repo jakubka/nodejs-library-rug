@@ -1,0 +1,42 @@
+{
+  "name": "project_name",
+  "version": "0.1.0",
+  "description": "library_description",
+  "main": "dist/metrics-client.js",
+  "scripts": {
+    "lint": "eslint ./lib ./test",
+    "pretest": "eslint ./lib ./test",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "build": "babel lib --source-maps --out-dir dist",
+    "build-docs": "mkdir -p docs && jsdoc2md lib/*.js > docs/api.md"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-skyscanner": "0.0.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "jsdoc": "^3.4.3",
+    "jsdoc-to-markdown": "^2.0.1",
+    "mocha": "^3.1.2",
+    "nock": "9.0.2",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "author": "Author",
+  "license": "UNLICENSED"
+}
