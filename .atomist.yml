@@ -1,0 +1,51 @@
+---
+kind: "operation"
+client: "rug-cli 0.17.1"
+editor:
+  name: "atomist-rugs.travis-editors.EnableTravisForRugArchiveDSL"
+  group: "atomist-rugs"
+  artifact: "travis-editors"
+  version: "0.4.0"
+  origin:
+    repo: "atomist-rugs/travis-editors.git"
+    branch: "master"
+    sha: "ffa56d6"
+  parameters:
+    - "repo_slug": "atomist-rugs/rug-archive"
+    - "org": ".org"
+    - "github_token": "4**************************************b"
+    - "maven_base_url": "https://atomist.jfrog.io/atomist"
+    - "maven_user": "t************h"
+    - "maven_token": "A***********************************************************************i"
+
+---
+kind: "operation"
+client: "rug-cli 0.19.1"
+editor:
+  name: "UpgradeFrom0_7_1"
+  group: "atomist-rugs"
+  artifact: "rug-upgrade"
+  version: "0.1.0"
+  origin:
+    repo: "atomist-rugs/rug-upgrade"
+    branch: "master"
+    sha: "e556ba9*"
+
+---
+kind: "operation"
+client: "rug-cli 0.21.0-SNAPSHOT"
+generator:
+  name: "NewRugArchiveProject"
+  group: "atomist-rugs"
+  artifact: "rug-archive"
+  version: "0.2.1"
+  origin:
+    repo: "atomist-rugs/rug-archive.git"
+    branch: "1ae028aab201aff6a151fb67d651625884c516f3"
+    sha: "1ae028a"
+  parameters:
+    - "project_name": "nodejs-library"
+    - "group_id": "mshell-rugs"
+    - "version": "0.1.0"
+    - "description": "Rug archive enabling development of Node.js libraries"
+
