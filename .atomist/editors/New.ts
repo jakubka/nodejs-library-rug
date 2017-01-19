@@ -26,9 +26,9 @@ import { PathExpression, PathExpressionEngine, TreeNode, Match } from '@atomist/
 // }
 
 class NewNodeJsLibraryGenerator extends CustomizingProjectGenerator {
-    name: "New"
-    description: "123"
-    parameters: [
+    name = "New"
+    description = "123"
+    parameters = [
         {
             name: "project_name",
             displayName: "Library Name",
@@ -50,7 +50,7 @@ class NewNodeJsLibraryGenerator extends CustomizingProjectGenerator {
             required: true
         }
     ]
-    tags: ["nodejs", "library", "rug"]
+    tags = ["nodejs", "library", "rug"]
     customize(project: Project, projectName: string, params: string[]): void {
         project.deleteFile("LICENSE");
 
